@@ -1,0 +1,406 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+:root {
+    --cor-primaria: #43138b;
+    --cor-secundaria: #2ecc71;
+    --fonte-principal: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    margin: 0;
+    padding: 0;
+}
+
+.caixa {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background: var(--cor-primaria);
+    color: white;
+    padding: 10px 0;
+    text-align: center; /* Centraliza o texto do header */
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+}
+
+h1 {
+    flex: 4;
+    text-align: center;
+    margin: 0;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.menu li:first-child {
+    margin-left: 0;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+
+.paragrafos-primeira-section{
+    text-indent: 40px;
+}
+
+/* Menu Responsivo */
+@media screen and (max-width: 768px) {
+    .caixa {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    .menu li a {
+        padding: 8px 12px;
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 55vh;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sessao {
+    background-color: #ededed;
+    padding: 50px 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.conteudo-sessao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-sessao {
+    flex: 1 1 300px;
+    margin-right: 20px;
+}
+
+.texto-sessao h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center; /* Centraliza o título da seção */
+}
+
+.texto-sessao p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.imagem-sessao {
+    flex: 1 1 300px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.imagem-sessao img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 20px 0;
+}
+
+.conteudo {
+    padding: 50px;
+    margin: 0px;
+    border-radius: 30px;
+}
+
+.conteudo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta o tamanho mínimo das colunas */
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bloco {
+    width: 100%;
+}
+
+.bloco img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.info-bloco {
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+#sobre-banner{
+    margin-left: 35%;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    width: 35%;
+    height: 60%;
+    border-radius: 5%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+.info-bloco h3 {
+    margin-top: 0;
+}
+
+.info-bloco p {
+    margin-bottom: 10px;
+}
+
+.info-bloco .botao{
+    background-color: #111212;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent; 
+}
+
+.info-bloco .botao img {
+    width: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: auto; /* Altura automática para manter a proporção */
+}
+
+.texto-footer {
+    background: var(--cor-primaria);
+    color: white;
+    padding: 10px 0;  
+    text-align: center; 
+}
+.redes-sociais {
+    margin-right: 20px; /* Espaçamento entre os ícones e o texto */
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 30px; /* Espaçamento entre os ícones */
+    margin-top: 5px;
+    margin-bottom: 8px;
+    
+}
+
+.social-link img {
+    width: 30px; /* Ajuste o tamanho dos ícones conforme necessário */
+    height: auto; /* Altura automática para manter a proporção */
+}
+
+
+@media screen and (max-width: 1024px) {
+    .caixa {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 35vh;
+    }
+
+    .texto-sessao, .imagem-sessao {
+        flex: 1 1 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .conteudo {
+        padding: 20px;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta o tamanho mínimo das colunas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .caixa {
+        width: 95%;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    .banner {
+        height: 25vh;
+    }
+
+    .menu li {
+        display: none;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    h1 {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .texto-sessao p {
+        font-size: 1em;
+    }
+
+    .sessao {
+        padding: 30px 0;
+    }
+}
+ #voltar{
+    width: 40px;
+    height: 40px;
+ }
+
+
+
+
+
+
+ .carousel-manual {
+    position: relative;
+    width: 100%;
+    max-height: 87.5vh; /* Ajuste a altura conforme necessário */
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 300%; /* Para três imagens lado a lado */
+    height: auto;
+    transition: transform 0.5s ease-in-out; /* Transição suave */
+    transform: translateX(0%); /* Inicialmente mostra a primeira imagem */
+}
+
+.slides img {
+    width: calc(100% / 3);
+    height: auto; /* Ou uma altura fixa se desejar */
+    display: block;
+    object-fit: contain; /* Adicione ou altere para esta linha */
+}
+
+.controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.controls label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #bbb;
+    cursor: pointer;
+}
+
+.controls label:hover {
+    background-color: #777;
+}
+
+/* Esconde os radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Estilos para mostrar o slide correspondente ao radio button selecionado */
+#slide1:checked ~ .slides {
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(calc(-100% / 3 * 1)); /* Move para a segunda imagem */
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(calc(-100% / 3 * 2)); /* Move para a terceira imagem */
+}
